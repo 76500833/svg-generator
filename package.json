@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "example": "examples"
+    "example": "examples",
+    "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.7.0"
+    "inquirer": "^8.2.4"
   }
 }
