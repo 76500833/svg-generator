@@ -5,6 +5,8 @@
   Generates a simple colored svg with text.
   ## Video Demonstration
   https://drive.google.com/file/d/1fAk3RHjdb2P8bURpfIw-gdZ7PJWxVVVC/view
+  ## Github for Generator
+  https://github.com/76500833/svg-generator
   
   ## Table of Contents
   - [Installation](#installation)
