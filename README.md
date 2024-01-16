@@ -3,6 +3,8 @@
   ![Assets\forReadMe.png](Assets/forReadMe.png)
   ## Description
   Generates a simple colored svg with text.
+  ## Video Demonstration
+  https://drive.google.com/file/d/1fAk3RHjdb2P8bURpfIw-gdZ7PJWxVVVC/view
   
   ## Table of Contents
   - [Installation](#installation)
