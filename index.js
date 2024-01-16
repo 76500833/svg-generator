@@ -7,9 +7,9 @@ const { colorChoices } = require('./color.js');
 // Destructure the exported classes
 
 //? prompt for 3 charactors that will be the text of the svg
-const chosenTextColor = process.argv[2]
-const chosenShape = process.argv[3]
-const chosenShapeColor = process.argv[4]
+// const chosenTextColor = process.argv[2]
+// const chosenShape = process.argv[3]
+// const chosenShapeColor = process.argv[4]
 const text = process.argv
 inquirer
   .prompt([
@@ -38,6 +38,8 @@ inquirer
     
   ])
   .then((answers) => {
+    console.log('Chosen Text:', answers.chosenText);
+    console.log('Chosen Shape Color:', answers.chosenShapeColor);
   let shapeElement;
 
   switch (answers.chosenShape.toLowerCase()) {
