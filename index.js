@@ -28,6 +28,11 @@ inquirer
       message: 'text: ',
       name: 'chosenText',
     },
+    {
+      type: 'input',
+      message: 'shape (circle, triangle, or square): ',
+      name: 'chosenShape',
+    },
     
     
   ])
@@ -57,7 +62,7 @@ inquirer
   </svg>`;
 
   // write the SVG code to a file named logo.svg
-  writeFile('logo.html', svgCode, (err) => {
+  writeFile('logo.svg', svgCode, (err) => {
     if (err) {
       console.error('Error writing file:', err);
     } else {
