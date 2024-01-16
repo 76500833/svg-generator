@@ -20,12 +20,6 @@ inquirer
     },
     {
       type: 'input',
-      message: 'Shape: ',
-      name: 'chosenShape',
-      choices: colorChoices
-    },
-    {
-      type: 'input',
       message: 'shape color: ',
       name: 'chosenShapeColor',
     },
