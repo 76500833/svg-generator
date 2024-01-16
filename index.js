@@ -7,9 +7,9 @@ const { colorChoices } = require('./color.js');
 // Destructure the exported classes
 
 //? prompt for 3 charactors that will be the text of the svg
-const chosenTextColor = process.argv[2]
-const chosenShape = process.argv[3]
-const chosenShapeColor = process.argv[4]
+// const chosenTextColor = process.argv[2]
+// const chosenShape = process.argv[3]
+// const chosenShapeColor = process.argv[4]
 const text = process.argv
 inquirer
   .prompt([
@@ -38,18 +38,19 @@ inquirer
     
   ])
   .then((answers) => {
+    console.log('Chosen Text:', answers.chosenText);
+    console.log('Chosen Shape Color:', answers.chosenShapeColor);
   let shapeElement;
 
   switch (answers.chosenShape.toLowerCase()) {
     case 'circle':
-      shapeElement = `<circle cx="150" cy="100" r="80" fill="${answers.chosenShapeColor}" />`;
+      shapeElement = new Circle(answers.chosenText, answers.chosenShapeColor).render();
       break;
     case 'triangle':
-      // Modify the points attribute based on your desired triangle shape
-      shapeElement = `<polygon points="150,20 230,150 70,150" fill="${answers.chosenShapeColor}" />`;
+      shapeElement = new Triangle(answers.chosenText, answers.chosenShapeColor).render();
       break;
     case 'square':
-      shapeElement = `<rect x="70" y="20" width="160" height="160" fill="${answers.chosenShapeColor}" />`;
+      shapeElement = new Square(answers.chosenText, answers.chosenShapeColor).render();
       break;
     default:
       console.error('Invalid shape choice');
