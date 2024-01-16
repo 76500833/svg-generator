@@ -4,7 +4,7 @@
   ## Description
   Generates a simple colored svg with text.
   ## Video Demonstration
-  https://drive.google.com/file/d/1fAk3RHjdb2P8bURpfIw-gdZ7PJWxVVVC/view
+  https://drive.google.com/file/d/1MKziEkZh2D_WSZ-sIZWQ6jzralX1zAK5/view
   ## Github for Generator
   https://github.com/76500833/svg-generator
   
